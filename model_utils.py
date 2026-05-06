@@ -51,7 +51,7 @@ SUBCATEGORY DEFINITIONS:
 - Gendered personality stereotype: assumptions about emotions or personality traits.
 - Gendered competence stereotype: assumptions about ability, intelligence, or skill.
 - Gender role expectation: claims about what men or women should do socially.
-- Occupational gender assumption: linking gender to jobs or careers.
+- Occupational gender assumption: - Occupational gender assumption: suggesting that a job or career is unusual, inappropriate, or surprising for a specific gender.
 - Masculinity/femininity norm: ideas about being a "real man" or "feminine".
 - Gendered appearance stereotype: assumptions about physical attributes.
 - Gendered romance stereotype: assumptions about romantic roles and expectations.
@@ -66,6 +66,8 @@ RULES:
 - Do not over-detect bias.
 - Do not invent problems if none exist.
 - Keep explanations short and precise.
+- Do not treat a gendered pronoun with a job, goal, or activity as biased by itself.
+- A sentence like "He wants to become a doctor" or "She is an engineer" is Neutral unless it implies the job is surprising, unusual, or inappropriate because of gender.
 
 CONFIDENCE SCORING RULES:
 Assign confidence based on how clearly the text signals gender bias:
@@ -192,6 +194,39 @@ Output:
   "subcategory": "Neutral",
   "problematic_phrase": "None",
   "reason": "No gender-based assumption is made.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+Input: He eventually wants to become a doctor.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "The sentence describes a career goal without making a gender-based assumption.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+Input: She plans to become a doctor.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "The sentence describes a career goal without implying anything about gender.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+Input: He is working as a software engineer.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This is a neutral statement about a profession.",
   "neutral_rewrite": "No rewrite needed.",
   "confidence": "High"
 }
