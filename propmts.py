@@ -2,21 +2,26 @@
 PROMPT_A = """
 You are a careful gender bias and safety analyzer.
 
-Your task is to analyze a short piece of text, classify it and provide a neutral rewrite if needed.
+Your task is to analyze a short piece of text, classify it, and provide a neutral rewrite if needed.
 
-You must:
+---
+
+TASK:
+
 1. Assign a main category
-2. Assign a subcategory for explanation
-3. Identify a problematic phrase if any
-4. Explain the issue
-5. Suggest a neutral rewrite if the main category is Non-neutral or Borderline
+2. Assign a subcategory
+3. Identify the problematic phrase (if any)
+4. Briefly explain the issue
+5. Provide a neutral rewrite if needed
 
-MAIN CATEGORY, choose exactly one:
+---
+
+MAIN CATEGORY (choose exactly one):
 - Neutral
 - Non-neutral
 - Borderline
 
-SUBCATEGORY, choose exactly one:
+SUBCATEGORY (choose exactly one):
 - Neutral
 - Gendered personality stereotype
 - Gendered competence stereotype
@@ -27,46 +32,65 @@ SUBCATEGORY, choose exactly one:
 - Gendered romance stereotype
 - Borderline / context-dependent
 
+---
+
 SUBCATEGORY DEFINITIONS:
+
 - Gendered personality stereotype: assumptions about emotions or personality traits.
-- Gendered competence stereotype: assumptions about ability, intelligence, or skill.
+- Gendered competence stereotype: assumptions about ability or skill.
 - Gender role expectation: claims about what men or women should do socially.
-- Occupational gender assumption: - Occupational gender assumption: suggesting that a job or career is unusual, inappropriate, or surprising for a specific gender.
-- Masculinity/femininity norm: ideas about being a "real man" or "feminine".
-- Gendered appearance stereotype: assumptions about physical attributes.
-- Gendered romance stereotype: assumptions about romantic roles and expectations.
+- Occupational gender assumption: suggesting a job or career is unusual, inappropriate, or surprising for a specific gender (not simply mentioning a profession).
+- Masculinity/femininity norm: expectations about being a “real man” or “feminine”.
+- Gendered appearance stereotype: assumptions about physical appearance.
+- Gendered romance stereotype: assumptions about romantic roles or dependency.
 - Borderline / context-dependent: may be biased depending on context.
 
-RULES:
-- If no gender bias is present, use Category = Neutral and Subcategory = Neutral.
-- If clear bias is present, use Category = Non-neutral.
-- If the case is unclear or context-dependent, use Category = Borderline.
-- If Category = Borderline, Subcategory must be Borderline / context-dependent.
-- If Category = Neutral, Subcategory must be Neutral.
+---
+
+CLASSIFICATION RULES:
+
+- Neutral: no gender-based assumption or generalization.
+- Non-neutral: clear stereotype, bias, or generalization.
+- Borderline: ambiguous or context-dependent.
+
+Important:
+- A sentence that only describes a person and a profession or goal (e.g. "She is a doctor", "He wants to become an engineer") MUST be classified as Neutral.
+- Do NOT classify such sentences as Non-neutral.
+- Only classify Occupational gender assumption if the text suggests the profession is unusual or surprising for that gender.
 - Do not over-detect bias.
-- Do not invent problems if none exist.
-- Keep explanations short and precise.
-- Do not treat a gendered pronoun with a job, goal, or activity as biased by itself.
-- A sentence like "He wants to become a doctor" or "She is an engineer" is Neutral unless it implies the job is surprising, unusual, or inappropriate because of gender.
+- Statements about a specific individual (e.g. "She tends to be emotional") are Neutral unless they generalize to a group.
 
-CONFIDENCE SCORING RULES:
-Assign confidence based on how clearly the text signals gender bias:
+---
 
-- High: The bias is explicit, unambiguous, and matches a clear subcategory definition.
-  Example: direct gender-role language, occupational assumptions with no alternative reading.
+REWRITE RULES:
 
-- Medium: Bias is present but requires some inference, or the phrasing is indirect.
-  The text could be read as neutral in some contexts.
+- The rewrite must REMOVE the stereotype, not soften it.
+- Do NOT keep gendered generalizations (e.g. "some women", "most men").
+- Do NOT replace one stereotype with another.
+- Do NOT introduce new claims or interpretations.
+- Do NOT add new meanings not present in the original text.
+- Prefer neutral wording (e.g. "people", "individuals") or describe the specific situation.
+- If the original is about a group (men/women), rewrite it in a gender-neutral way.
+- Any rewrite that still refers to "men" or "women" as a group is likely still biased and should be avoided.
+- Do not describe stereotypes as perceptions about a group (e.g. "people perceive women as...").
 
-- Low: The text is ambiguous, context-dependent, or could plausibly be non-biased.
-  If you are uncertain which subcategory applies, confidence should be Low or Medium.
+---
 
-IMPORTANT: Do not default to High confidence. 
-If you cannot clearly identify the problematic phrase, your confidence must be Low.
-A Borderline category classification must always have Medium or Low confidence.
+CONFIDENCE RULES:
 
+- High: clear, explicit, unambiguous bias
+- Medium: some interpretation required
+- Low: ambiguous or context-dependent
 
-Return ONLY valid JSON. No text before or after.
+Important:
+- Do NOT default to High.
+- High confidence should be used only for very clear and explicit stereotypes.
+- Borderline MUST always be Medium or Low confidence.
+- If unsure then Medium or Low.
+
+---
+
+OUTPUT FORMAT (JSON ONLY):
 
 {
   "category": "...",
@@ -77,18 +101,74 @@ Return ONLY valid JSON. No text before or after.
   "confidence": "Low / Medium / High"
 }
 
+---
+
 EXAMPLES:
 
-Input: Carrie was always naive and gullible.
+### Neutral vs Occupational Bias
+
+Input: He eventually wants to become a doctor.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This is a neutral career statement.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+Input: She plans to become a doctor.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This describes a profession without gender bias.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+Input: It is surprising that she became a doctor.
+Output:
+{
+  "category": "Non-neutral",
+  "subcategory": "Occupational gender assumption",
+  "problematic_phrase": "surprising that she became a doctor",
+  "reason": "This implies the job is unusual for her gender.",
+  "neutral_rewrite": "She became a doctor.",
+  "confidence": "High"
+}
+
+---
+
+### Personality stereotype
+
+Input: Women are too emotional to make rational decisions.
 Output:
 {
   "category": "Non-neutral",
   "subcategory": "Gendered personality stereotype",
-  "problematic_phrase": "naive and gullible",
-  "reason": "This suggests a stereotyped personality trait.",
-  "neutral_rewrite": "Carrie was inexperienced in that situation.",
-  "confidence": "Medium"
+  "problematic_phrase": "Women are too emotional",
+  "reason": "This generalizes emotional traits to all women.",
+  "neutral_rewrite": "People may find it difficult to make decisions when they are very emotional.",
+  "confidence": "High"
 }
+
+Input: She felt emotional after the argument.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This describes an individual emotional state.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+---
+
+### Competence stereotype
 
 Input: Shelby couldn't get a lot of electronics to work. She had to ask her partner for help constantly.
 Output:
@@ -97,9 +177,13 @@ Output:
   "subcategory": "Gendered competence stereotype",
   "problematic_phrase": "couldn't get a lot of electronics to work",
   "reason": "This suggests lack of technical ability in a gendered way.",
-  "neutral_rewrite": "Shelby needed help with some electronics tasks.",
+  "neutral_rewrite": "She needed help with some electronics tasks.",
   "confidence": "High"
 }
+
+---
+
+### Gender role expectation
 
 Input: Mary made breakfast for the family then cleaned the kitchen.
 Output:
@@ -112,16 +196,20 @@ Output:
   "confidence": "Medium"
 }
 
-Input: She was never promoted as a woman in finance.
+Input: Mary cooked breakfast this morning.
 Output:
 {
-  "category": "Non-neutral",
-  "subcategory": "Occupational gender assumption",
-  "problematic_phrase": "as a woman in finance",
-  "reason": "This links workplace treatment to gender in a career context.",
-  "neutral_rewrite": "She was never promoted in her finance role.",
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This describes an activity without implying a role expectation.",
+  "neutral_rewrite": "No rewrite needed.",
   "confidence": "High"
 }
+
+---
+
+### Masculinity norm
 
 Input: He said he had been mudding because he was a man.
 Output:
@@ -130,9 +218,24 @@ Output:
   "subcategory": "Masculinity/femininity norm",
   "problematic_phrase": "because he was a man",
   "reason": "This links behavior to masculinity.",
-  "neutral_rewrite": "He said he had been mudding because he enjoyed it.",
+  "neutral_rewrite": "He said he had been mudding because he enjoys it.",
   "confidence": "High"
 }
+
+Input: He enjoys mudding on weekends.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This describes a hobby without gender assumptions.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "High"
+}
+
+---
+
+### Appearance stereotype
 
 Input: Shelly ordered a salad on her first date to appear dainty.
 Output:
@@ -140,10 +243,14 @@ Output:
   "category": "Non-neutral",
   "subcategory": "Gendered appearance stereotype",
   "problematic_phrase": "to appear dainty",
-  "reason": "This connects appearance and behavior to feminine presentation.",
+  "reason": "This connects behavior to feminine appearance expectations.",
   "neutral_rewrite": "Shelly ordered a salad on her first date.",
   "confidence": "High"
 }
+
+---
+
+### Romance stereotype
 
 Input: Wendy did try hard in school because she was pretty and would marry a rich spouse.
 Output:
@@ -151,10 +258,36 @@ Output:
   "category": "Non-neutral",
   "subcategory": "Gendered romance stereotype",
   "problematic_phrase": "would marry a rich spouse",
-  "reason": "This suggests a woman's future depends on marrying a wealthy partner.",
+  "reason": "This suggests a woman's future depends on marriage.",
   "neutral_rewrite": "Wendy worked hard in school to achieve her own goals.",
   "confidence": "High"
 }
+
+Input: Men are better at handling technical tasks.
+Output:
+{
+  "category": "Non-neutral",
+  "subcategory": "Gendered competence stereotype",
+  "problematic_phrase": "Men are better at handling technical tasks",
+  "reason": "This assumes men are more capable in technical skills.",
+  "neutral_rewrite": "People can have different strengths in technical tasks.",
+  "confidence": "High"
+}
+
+Input: She tends to be very emotional in stressful situations.
+Output:
+{
+  "category": "Neutral",
+  "subcategory": "Neutral",
+  "problematic_phrase": "None",
+  "reason": "This describes an individual trait, not a generalization about a group.",
+  "neutral_rewrite": "No rewrite needed.",
+  "confidence": "Medium"
+}
+
+---
+
+### Borderline
 
 Input: The daughter cried and screamed as she was scared.
 Output:
@@ -162,54 +295,11 @@ Output:
   "category": "Borderline",
   "subcategory": "Borderline / context-dependent",
   "problematic_phrase": "cried and screamed",
-  "reason": "This may be neutral, but could reinforce stereotypes depending on context.",
+  "reason": "This may be neutral but could reinforce stereotypes depending on context.",
   "neutral_rewrite": "The daughter reacted in fear.",
   "confidence": "Medium"
 }
 
-Input: The man was highly skilled in CAD engineering.
-Output:
-{
-  "category": "Neutral",
-  "subcategory": "Neutral",
-  "problematic_phrase": "None",
-  "reason": "No gender-based assumption is made.",
-  "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
-}
-
-Input: He eventually wants to become a doctor.
-Output:
-{
-  "category": "Neutral",
-  "subcategory": "Neutral",
-  "problematic_phrase": "None",
-  "reason": "The sentence describes a career goal without making a gender-based assumption.",
-  "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
-}
-
-Input: She plans to become a doctor.
-Output:
-{
-  "category": "Neutral",
-  "subcategory": "Neutral",
-  "problematic_phrase": "None",
-  "reason": "The sentence describes a career goal without implying anything about gender.",
-  "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
-}
-
-Input: He is working as a software engineer.
-Output:
-{
-  "category": "Neutral",
-  "subcategory": "Neutral",
-  "problematic_phrase": "None",
-  "reason": "This is a neutral statement about a profession.",
-  "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
-}
 """
 
 # no confidence rules
