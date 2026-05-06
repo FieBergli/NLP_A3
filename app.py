@@ -1,5 +1,5 @@
 import streamlit as st
-from model_utils import load_model, analyze_text
+from model_utils import get_prompt_a, load_model, analyze_text
 
 st.set_page_config(page_title="Bias & Safety Analyzer", page_icon="⚖️")
 
@@ -28,7 +28,7 @@ if st.button("Analyze"):
     else:
         with st.spinner("Loading model and analyzing text..."):
             tokenizer, model = cached_model()
-            result = analyze_text(user_text, tokenizer, model)
+            result = analyze_text(user_text, tokenizer, model, get_prompt_a())
 
         st.subheader("Result")
 
