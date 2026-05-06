@@ -1,5 +1,4 @@
-from model_utils import analyze_text, get_prompt_a, get_prompt_b, get_prompt_c, get_system_prompt, load_model
-import torch
+from model_utils import analyze_text, get_prompt_a, get_prompt_b, get_prompt_c, load_model
 
 
 tokenizer, model = load_model()
