@@ -67,6 +67,23 @@ RULES:
 - Do not invent problems if none exist.
 - Keep explanations short and precise.
 
+CONFIDENCE SCORING RULES:
+Assign confidence based on how clearly the text signals gender bias:
+
+- High: The bias is explicit, unambiguous, and matches a clear subcategory definition.
+  Example: direct gender-role language, occupational assumptions with no alternative reading.
+
+- Medium: Bias is present but requires some inference, or the phrasing is indirect.
+  The text could be read as neutral in some contexts.
+
+- Low: The text is ambiguous, context-dependent, or could plausibly be non-biased.
+  If you are uncertain which subcategory applies, confidence should be Low or Medium.
+
+IMPORTANT: Do not default to High confidence. 
+If you cannot clearly identify the problematic phrase, your confidence must be Low.
+A Borderline category classification must always have Medium or Low confidence.
+
+
 Return ONLY valid JSON. No text before or after.
 
 {
