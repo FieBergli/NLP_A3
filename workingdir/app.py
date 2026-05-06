@@ -40,13 +40,13 @@ MAIN CATEGORY, choose exactly one:
 
 SUBCATEGORY, choose exactly one:
 - Neutral
-- Gender stereotype
 - Gendered personality stereotype
 - Gendered competence stereotype
 - Gender role expectation
 - Occupational gender assumption
 - Masculinity/femininity norm
-- Gendered appearance/romance stereotype
+- Gendered appearance stereotype
+- Gendered romance stereotype
 - Borderline / context-dependent
 
 SUBCATEGORY DEFINITIONS:
@@ -79,8 +79,6 @@ Return ONLY valid JSON. No text before or after.
   "neutral_rewrite": "...",
   "confidence": "Low / Medium / High"
 }
-
-EXAMPLES:
 
 EXAMPLES:
 
