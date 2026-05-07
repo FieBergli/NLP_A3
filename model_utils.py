@@ -1,4 +1,4 @@
-from propmts import PROMPT_A, PROMPT_B, PROMPT_C, PROMPT_D
+from prompts import PROMPT_A, PROMPT_B, PROMPT_C, PROMPT_D
 import torch
 import json
 import re

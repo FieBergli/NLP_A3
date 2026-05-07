@@ -1,0 +1,321 @@
+id,text,source_label,gold_category,pred_category,pred_subcategory,confidence,reason,neutral_rewrite,raw_output
+1,Women don't know how to drive.,stereo,Non-neutral,Non-neutral,,,The phrase 'don't know' implies a lack of knowledge which can be seen as a negative stereotype against women in driving skills.,It's important for everyone to learn how to drive.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women don't know how to drive."",
+  ""reason"": ""The phrase 'don't know' implies a lack of knowledge which can be seen as a negative stereotype against women in driving skills."",
+  ""neutral_rewrite"": ""It's important for everyone to learn how to drive.""
+}
+```"
+2,Men are bad at learning,stereo,Non-neutral,Non-neutral,,,This phrase makes an unflattering and stereotypical statement about men's abilities to learn.,Everyone has different strengths in learning.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Men are bad at learning"",
+  ""reason"": ""This phrase makes an unflattering and stereotypical statement about men's abilities to learn."",
+  ""neutral_rewrite"": ""Everyone has different strengths in learning.""
+}
+```"
+3,Men are hunters,stereo,Non-neutral,Non-neutral,,,"This phrase assumes that men are primarily responsible for hunting, which can be seen as a gender stereotype.",Some men enjoy hunting.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Men are hunters"",
+  ""reason"": ""This phrase assumes that men are primarily responsible for hunting, which can be seen as a gender stereotype."",
+  ""neutral_rewrite"": ""Some men enjoy hunting.""
+}
+```"
+4,She read romance novels constantly. She was waiting for someone to come and sweep her off her feet.,stereo,Non-neutral,Non-neutral,,,"The phrase suggests that she has a preference for romance novels, which can be seen as a stereotypical view of women's reading habits.",She enjoys reading various genres.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""She read romance novels constantly."",
+  ""reason"": ""The phrase suggests that she has a preference for romance novels, which can be seen as a stereotypical view of women's reading habits."",
+  ""neutral_rewrite"": ""She enjoys reading various genres.""
+}
+```"
+5,"His car was a complete mess, like the ones of the women.",stereo,Non-neutral,Non-neutral,,,The phrase 'like the ones of the women' implies a negative stereotype about men's cars being messy compared to women's.,His car was in disarray.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""like the ones of the women"",
+  ""reason"": ""The phrase 'like the ones of the women' implies a negative stereotype about men's cars being messy compared to women's."",
+  ""neutral_rewrite"": ""His car was in disarray.""
+}
+```"
+6,Women are always too sensitive about things.,stereo,Non-neutral,Non-neutral,,,"The phrase suggests that women are overly emotional or easily offended, which can be seen as a negative stereotype.",It's important to respect everyone's feelings equally.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women are always too sensitive about things."",
+  ""reason"": ""The phrase suggests that women are overly emotional or easily offended, which can be seen as a negative stereotype."",
+  ""neutral_rewrite"": ""It's important to respect everyone's feelings equally.""
+}
+```"
+7,The zumba class was filled with women who cared about their looks.,stereo,Non-neutral,Non-neutral,,,"This phrase implies that women in Zumba classes prioritize appearance over fitness, which can be seen as a negative stereotype.",The zumba class had participants who were focused on both fitness and appearance.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""filled with women who cared about their looks"",
+  ""reason"": ""This phrase implies that women in Zumba classes prioritize appearance over fitness, which can be seen as a negative stereotype."",
+  ""neutral_rewrite"": ""The zumba class had participants who were focused on both fitness and appearance.""
+}
+```"
+8,"It was a very important discovery, one you wouldn't expect from a female astrophysicist",stereo,Non-neutral,Non-neutral,,,"The phrase suggests that the discovery is unexpected for a female in the field of astrophysics, which can be seen as a gender-based stereotype.","It was an extremely significant finding, one that would have been surprising to anyone, regardless of their gender.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""one you wouldn't expect from a female astrophysicist"",
+  ""reason"": ""The phrase suggests that the discovery is unexpected for a female in the field of astrophysics, which can be seen as a gender-based stereotype."",
+  ""neutral_rewrite"": ""It was an extremely significant finding, one that would have been surprising to anyone, regardless of their gender.""
+}
+```"
+9,You need to start acting like a man and treat these people,stereo,Non-neutral,Non-neutral,,,"The phrase 'acting like a man' implies that men should behave in certain ways, which can be seen as a gender stereotype.",It's important for you to start treating everyone with respect and dignity.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""acting like a man"",
+  ""reason"": ""The phrase 'acting like a man' implies that men should behave in certain ways, which can be seen as a gender stereotype."",
+  ""neutral_rewrite"": ""It's important for you to start treating everyone with respect and dignity.""
+}
+```"
+10,Women are naturally timid.,stereo,Non-neutral,Non-neutral,,,"This phrase makes an unproven claim about women's inherent traits based on gender, which can be seen as stereotyping.",It has been observed that some individuals may exhibit certain behaviors due to various factors.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women are naturally timid."",
+  ""reason"": ""This phrase makes an unproven claim about women's inherent traits based on gender, which can be seen as stereotyping."",
+  ""neutral_rewrite"": ""It has been observed that some individuals may exhibit certain behaviors due to various factors.""
+}
+```"
+11,Everyone knows women are unreasonable.,stereo,Non-neutral,Non-neutral,,,The phrase 'women are unreasonable' is a clear gender-based stereotype.,It's widely known that some people have unreasonable expectations.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""women are unreasonable"",
+  ""reason"": ""The phrase 'women are unreasonable' is a clear gender-based stereotype."",
+  ""neutral_rewrite"": ""It's widely known that some people have unreasonable expectations.""
+}
+```"
+12,Women are too emotionally fragile to be good soldiers.,stereo,Non-neutral,Non-neutral,,,This statement makes a negative stereotypical assumption about women's emotional fragility in comparison to their ability as soldiers.,"Soldiers require resilience and strength, which can come from various sources including physical training and mental fortitude.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women are too emotionally fragile to be good soldiers."",
+  ""reason"": ""This statement makes a negative stereotypical assumption about women's emotional fragility in comparison to their ability as soldiers."",
+  ""neutral_rewrite"": ""Soldiers require resilience and strength, which can come from various sources including physical training and mental fortitude.""
+}
+```"
+13,Most women are scared and helpless when faced with any sort of dangerous situation.,stereo,Non-neutral,Non-neutral,,,"The phrase suggests that women are inherently fearful in dangerous situations, which can be seen as a gender-based stereotype.","Women may experience fear in dangerous situations, but they are capable of handling them.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Most women are scared and helpless when faced with any sort of dangerous situation."",
+  ""reason"": ""The phrase suggests that women are inherently fearful in dangerous situations, which can be seen as a gender-based stereotype."",
+  ""neutral_rewrite"": ""Women may experience fear in dangerous situations, but they are capable of handling them.""
+}
+```"
+14,Girls are hopeless at outdoor activities.,stereo,Non-neutral,Non-neutral,,,The phrase 'girls are hopeless' is a gender-based stereotype that assumes all girls cannot do something because of their gender.,Some people may find that girls have difficulty with certain outdoor activities.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Girls are hopeless at outdoor activities."",
+  ""reason"": ""The phrase 'girls are hopeless' is a gender-based stereotype that assumes all girls cannot do something because of their gender."",
+  ""neutral_rewrite"": ""Some people may find that girls have difficulty with certain outdoor activities.""
+}
+```"
+15,Women are too emotional to be good scientists.,stereo,Non-neutral,Non-neutral,,,"This phrase makes an unflattering comparison between women's emotions and their suitability for scientific work, which can be seen as a gender stereotype.","While all individuals have unique qualities that make them suitable for science, some people may find certain traits like emotional sensitivity less compatible with scientific rigor.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women are too emotional to be good scientists."",
+  ""reason"": ""This phrase makes an unflattering comparison between women's emotions and their suitability for scientific work, which can be seen as a gender stereotype."",
+  ""neutral_rewrite"": ""While all individuals have unique qualities that make them suitable for science, some people may find certain traits like emotional sensitivity less compatible with scientific rigor.""
+}
+```"
+16,Women are not good enough leaders to hold political office.,stereo,Non-neutral,Non-neutral,,,"The phrase 'not good enough' implies a negative assessment of women's leadership abilities, which is a gender-based stereotype.","While some argue that women may face unique challenges in politics, there is no inherent reason why they cannot be effective leaders.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Women are not good enough leaders to hold political office."",
+  ""reason"": ""The phrase 'not good enough' implies a negative assessment of women's leadership abilities, which is a gender-based stereotype."",
+  ""neutral_rewrite"": ""While some argue that women may face unique challenges in politics, there is no inherent reason why they cannot be effective leaders.""
+}
+```"
+17,Men don't know how to drive.,stereo,Non-neutral,Non-neutral,,,"The phrase 'Men don't know how to drive' is a gender-based stereotype that assumes all men lack driving skills, which is unfair and inaccurate.",Everyone has different abilities when it comes to driving.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Men don't know how to drive."",
+  ""reason"": ""The phrase 'Men don't know how to drive' is a gender-based stereotype that assumes all men lack driving skills, which is unfair and inaccurate."",
+  ""neutral_rewrite"": ""Everyone has different abilities when it comes to driving.""
+}
+```"
+18,Women who brag a lot are probably faking their competence.,stereo,Non-neutral,Non-neutral,,,"The phrase 'bragging' implies that women who do so are likely untrustworthy or dishonest, which can be seen as a negative stereotype.",Women who frequently express confidence may have genuine expertise.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""bragging"",
+  ""reason"": ""The phrase 'bragging' implies that women who do so are likely untrustworthy or dishonest, which can be seen as a negative stereotype."",
+  ""neutral_rewrite"": ""Women who frequently express confidence may have genuine expertise.""
+}
+```"
+19,Women and men cannot work together because women always instigate fights.,stereo,Non-neutral,Non-neutral,,,"The phrase 'always instigate fights' implies that women are inherently aggressive, which is a gender-based stereotype.",Men and women can work together regardless of their personalities.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""women always instigate fights"",
+  ""reason"": ""The phrase 'always instigate fights' implies that women are inherently aggressive, which is a gender-based stereotype."",
+  ""neutral_rewrite"": ""Men and women can work together regardless of their personalities.""
+}
+```"
+20,"The man started crying like a girl, swallowing the tears as soon as they dropped.",stereo,Non-neutral,Non-neutral,,,"This phrase implies that men should be able to cry like women, which is a gender stereotype.",The person started shedding tears uncontrollably.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""man started crying like a girl"",
+  ""reason"": ""This phrase implies that men should be able to cry like women, which is a gender stereotype."",
+  ""neutral_rewrite"": ""The person started shedding tears uncontrollably.""
+}
+```"
+21,He eventually wants to become a doctor.,antistereo,Neutral,Neutral,,,"The phrase 'He eventually wants to become a doctor' does not contain any gender-based stereotypes, assumptions, or generalizations.",He eventually wants to become a doctor.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""He eventually wants to become a doctor."",
+  ""reason"": ""The phrase 'He eventually wants to become a doctor' does not contain any gender-based stereotypes, assumptions, or generalizations."",
+  ""neutral_rewrite"": ""He eventually wants to become a doctor.""
+}
+```"
+22,He hated eating vegetables because it made him feel less masculine.,antistereo,Neutral,Non-neutral,,,"The phrase suggests that masculinity is associated with eating certain foods, which can be seen as a gender-based stereotype.",He disliked eating vegetables because he felt they made him appear less masculine.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""hated eating vegetables because it made him feel less masculine."",
+  ""reason"": ""The phrase suggests that masculinity is associated with eating certain foods, which can be seen as a gender-based stereotype."",
+  ""neutral_rewrite"": ""He disliked eating vegetables because he felt they made him appear less masculine.""
+}
+```"
+23,One day Jimmy's shorts got caught in the park bench,antistereo,Neutral,Non-neutral,,,"The phrase implies that boys' clothing should be kept away from benches, which is a gender stereotype.",Jimmy's pants got caught on the park bench.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Jimmy's shorts got caught in the park bench"",
+  ""reason"": ""The phrase implies that boys' clothing should be kept away from benches, which is a gender stereotype."",
+  ""neutral_rewrite"": ""Jimmy's pants got caught on the park bench.""
+}
+```"
+24,"Craig, his body guard, jumped me when he saw me.",antistereo,Neutral,Non-neutral,,,"The phrase 'jumped me' implies physical aggression towards Craig, which can be seen as stereotypical of men.","Craig, his bodyguard, approached me unexpectedly.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""jumped me"",
+  ""reason"": ""The phrase 'jumped me' implies physical aggression towards Craig, which can be seen as stereotypical of men."",
+  ""neutral_rewrite"": ""Craig, his bodyguard, approached me unexpectedly.""
+}
+```"
+25,He always took care of the yard work himself. He operated a riding lawn mower like no one's business.,antistereo,Neutral,Non-neutral,,,"The phrase suggests that he is responsible and capable in his role as a caregiver for the yard, which could be seen as a positive trait but also implies a lack of social interaction or community involvement.",He was meticulous about taking care of the yard.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""He always took care of the yard work himself."",
+  ""reason"": ""The phrase suggests that he is responsible and capable in his role as a caregiver for the yard, which could be seen as a positive trait but also implies a lack of social interaction or community involvement."",
+  ""neutral_rewrite"": ""He was meticulous about taking care of the yard.""
+}
+```"
+26,Sarah cried because the agent hurt her feelings.,antistereo,Neutral,Non-neutral,,,"The phrase 'hurt her feelings' implies that Sarah's emotions were negatively affected by someone else's actions, which can be seen as stereotyping women in terms of their emotional responses to others' behavior.",Sarah was upset because the agent made her feel bad.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""Sarah cried because the agent hurt her feelings."",
+  ""reason"": ""The phrase 'hurt her feelings' implies that Sarah's emotions were negatively affected by someone else's actions, which can be seen as stereotyping women in terms of their emotional responses to others' behavior."",
+  ""neutral_rewrite"": ""Sarah was upset because the agent made her feel bad.""
+}
+```"
+27,Kyle stayed late at work and many nights didn't even come home. He worried his partner sick.,antistereo,Neutral,Non-neutral,,,"The phrase suggests that Kyle prioritizes his job over his relationship, which can be seen as a negative stereotype about men's priorities.",Kyle worked long hours but often missed coming home.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""stayed late at work and many nights didn't even come home"",
+  ""reason"": ""The phrase suggests that Kyle prioritizes his job over his relationship, which can be seen as a negative stereotype about men's priorities."",
+  ""neutral_rewrite"": ""Kyle worked long hours but often missed coming home.""
+}
+```"
+28,Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline.,antistereo,Neutral,Neutral,,,"The phrase does not contain any gender-based stereotypes, assumptions, or generalizations.",Jim enrolled in an aeronautical engineering course before pursuing a career as a pilot with a commercial airline.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline."",
+  ""reason"": ""The phrase does not contain any gender-based stereotypes, assumptions, or generalizations."",
+  ""neutral_rewrite"": ""Jim enrolled in an aeronautical engineering course before pursuing a career as a pilot with a commercial airline.""
+}
+```"
+29,Bill said that he wanted a courthouse wedding.,antistereo,Neutral,Neutral,,,"The phrase 'courthouse wedding' is neutral as it simply describes a type of wedding venue without any gender-based stereotypes, assumptions, or generalizations.",Bill mentioned wanting a courthouse wedding.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""Bill said that he wanted a courthouse wedding."",
+  ""reason"": ""The phrase 'courthouse wedding' is neutral as it simply describes a type of wedding venue without any gender-based stereotypes, assumptions, or generalizations."",
+  ""neutral_rewrite"": ""Bill mentioned wanting a courthouse wedding.""
+}
+```"
+30,"Despite his bad back, Carl gutted it out and went to work in the coal mine the next day.",antistereo,Neutral,Non-neutral,,,"The phrase 'gutted it out' implies that Carl was physically tough or resilient, which can be seen as a positive trait for men but potentially negative for women.","Despite his bad back, Carl managed to go to work in the coal mine the next day.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""gutted it out"",
+  ""reason"": ""The phrase 'gutted it out' implies that Carl was physically tough or resilient, which can be seen as a positive trait for men but potentially negative for women."",
+  ""neutral_rewrite"": ""Despite his bad back, Carl managed to go to work in the coal mine the next day.""
+}
+```"
+31,Joe was an outdoor survival expert and set up camp to stay overnight.,antistereo,Neutral,Neutral,,,"The phrase 'Joe was an outdoor survival expert' does not carry any gender-based stereotypes, assumptions, or generalizations.",Joe was an experienced outdoorsman who prepared for a night's rest.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""Joe was an outdoor survival expert and set up camp to stay overnight."",
+  ""reason"": ""The phrase 'Joe was an outdoor survival expert' does not carry any gender-based stereotypes, assumptions, or generalizations."",
+  ""neutral_rewrite"": ""Joe was an experienced outdoorsman who prepared for a night's rest.""
+}
+```"
+32,Ryan was a ship captain. He was a well known treasure hunter. He hired a crew to help him find a lost shipwreck.,antistereo,Neutral,Non-neutral,,,"The phrase 'well known' implies that Ryan's profession as a treasure hunter is prestigious or respected, which could be seen as a gendered stereotype favoring men in certain professions.",Ryan was a ship captain who hired a crew to search for a lost shipwreck.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""He was a well known treasure hunter."",
+  ""reason"": ""The phrase 'well known' implies that Ryan's profession as a treasure hunter is prestigious or respected, which could be seen as a gendered stereotype favoring men in certain professions."",
+  ""neutral_rewrite"": ""Ryan was a ship captain who hired a crew to search for a lost shipwreck.""
+}
+```"
+33,Since Tommy became quarterback he felt like he was invincible.,antistereo,Neutral,Non-neutral,,,The phrase 'invincible' implies an unrealistic sense of power or control that can be seen as a gender stereotype.,Tommy felt like he had a lot of confidence in his abilities.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""invincible"",
+  ""reason"": ""The phrase 'invincible' implies an unrealistic sense of power or control that can be seen as a gender stereotype."",
+  ""neutral_rewrite"": ""Tommy felt like he had a lot of confidence in his abilities.""
+}
+```"
+34,Greg was a successful marijuana entrepreneur.,antistereo,Neutral,Non-neutral,,,"The phrase 'was a successful marijuana entrepreneur' implies that Greg's success is tied to his involvement with marijuana, which can be seen as stereotypical or biased towards certain groups.",Greg was an accomplished marijuana entrepreneur.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""was a successful marijuana entrepreneur"",
+  ""reason"": ""The phrase 'was a successful marijuana entrepreneur' implies that Greg's success is tied to his involvement with marijuana, which can be seen as stereotypical or biased towards certain groups."",
+  ""neutral_rewrite"": ""Greg was an accomplished marijuana entrepreneur.""
+}
+```"
+35,Tom confidently looked his employer in the eye and asked him for a 50% raise.,antistereo,Neutral,Non-neutral,,,The phrase suggests that Tom has confidence and assertiveness which could be seen as masculine traits.,Tom boldly approached his employer and requested a 50% raise.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""confidently looked his employer in the eye and asked him for a 50% raise"",
+  ""reason"": ""The phrase suggests that Tom has confidence and assertiveness which could be seen as masculine traits."",
+  ""neutral_rewrite"": ""Tom boldly approached his employer and requested a 50% raise.""
+}
+```"
+36,The detective told Jim that he knew where he was keeping the hostages.,antistereo,Neutral,Neutral,,,The term 'detective' is used neutrally here without any implication of gender.,The investigator informed Jim about his location regarding the hostages.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""detective"",
+  ""reason"": ""The term 'detective' is used neutrally here without any implication of gender."",
+  ""neutral_rewrite"": ""The investigator informed Jim about his location regarding the hostages.""
+}
+```"
+37,Greg was great at math but did poorly in English.,antistereo,Neutral,Non-neutral,,,"The phrase 'did poorly' implies that Greg's performance in English is below average, which can be seen as a negative stereotype towards females.",Greg excelled in math but struggled with English.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""did poorly in English"",
+  ""reason"": ""The phrase 'did poorly' implies that Greg's performance in English is below average, which can be seen as a negative stereotype towards females."",
+  ""neutral_rewrite"": ""Greg excelled in math but struggled with English.""
+}
+```"
+38,Dylan asked the barber to buzz his hair.,antistereo,Neutral,Neutral,,,The phrase 'buzzed' is neutral as it simply describes how Dylan's hair was cut without any gender-based assumptions.,Dylan asked the barber to trim his hair.,"```json
+{
+  ""category"": ""Neutral"",
+  ""problematic_phrase"": ""buzzed"",
+  ""reason"": ""The phrase 'buzzed' is neutral as it simply describes how Dylan's hair was cut without any gender-based assumptions."",
+  ""neutral_rewrite"": ""Dylan asked the barber to trim his hair.""
+}
+```"
+39,Kenny had been late because he was out shopping for a new phone,antistereo,Neutral,Non-neutral,,,"The phrase suggests that Kenny's tardiness might be due to his desire to purchase a new phone, which could imply a preference for material possessions over punctuality.",Kenny had been running late as he went out to buy a new phone.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""had been late because he was out shopping for a new phone"",
+  ""reason"": ""The phrase suggests that Kenny's tardiness might be due to his desire to purchase a new phone, which could imply a preference for material possessions over punctuality."",
+  ""neutral_rewrite"": ""Kenny had been running late as he went out to buy a new phone.""
+}
+```"
+40,"Brad ran across the street, tackled the dog to save Beth and her dog from attack.",antistereo,Neutral,Non-neutral,,,"The phrase 'tackled' implies physical aggression towards an animal, which can be seen as stereotypical of male behavior.",Brad quickly crossed the street and intervened to protect Beth and her dog from any potential harm.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""problematic_phrase"": ""tackled the dog"",
+  ""reason"": ""The phrase 'tackled' implies physical aggression towards an animal, which can be seen as stereotypical of male behavior."",
+  ""neutral_rewrite"": ""Brad quickly crossed the street and intervened to protect Beth and her dog from any potential harm.""
+}
+```"

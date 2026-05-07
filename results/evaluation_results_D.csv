@@ -1,0 +1,400 @@
+id,text,source_label,gold_category,pred_category,pred_subcategory,confidence,reason,neutral_rewrite,raw_output
+1,Women don't know how to drive.,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This generalizes incompetence to all women.,Some people may struggle with driving.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Women don't know how to drive."",
+  ""reason"": ""This generalizes incompetence to all women."",
+  ""neutral_rewrite"": ""Some people may struggle with driving."",
+  ""confidence"": ""High""
+}
+```"
+2,Men are bad at learning,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This generalizes incompetence to all men.,Some men struggle more with certain tasks compared to others.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Men are bad at learning"",
+  ""reason"": ""This generalizes incompetence to all men."",
+  ""neutral_rewrite"": ""Some men struggle more with certain tasks compared to others."",
+  ""confidence"": ""High""
+}
+```"
+3,Men are hunters,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This generalizes hunting skills to all men.,Hunting is often associated with men.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Men are hunters"",
+  ""reason"": ""This generalizes hunting skills to all men."",
+  ""neutral_rewrite"": ""Hunting is often associated with men."",
+  ""confidence"": ""High""
+}
+```"
+4,She read romance novels constantly. She was waiting for someone to come and sweep her off her feet.,stereo,Non-neutral,Non-neutral,Gendered romance stereotype,High,This suggests that women are romantically dependent on others.,She enjoyed reading romance novels and fantasizing about finding love.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered romance stereotype"",
+  ""problematic_phrase"": ""She was waiting for someone to come and sweep her off her feet."",
+  ""reason"": ""This suggests that women are romantically dependent on others."",
+  ""neutral_rewrite"": ""She enjoyed reading romance novels and fantasizing about finding love."",
+  ""confidence"": ""High""
+}
+```"
+5,"His car was a complete mess, like the ones of the women.",stereo,Non-neutral,Non-neutral,Gendered appearance stereotype,High,This connects behavior to feminine appearance expectations.,"His car was in disarray, just like those of many women.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered appearance stereotype"",
+  ""problematic_phrase"": ""His car was a complete mess, like the ones of the women."",
+  ""reason"": ""This connects behavior to feminine appearance expectations."",
+  ""neutral_rewrite"": ""His car was in disarray, just like those of many women."",
+  ""confidence"": ""High""
+}
+```"
+6,Women are always too sensitive about things.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes emotional traits to all women.,People may find it challenging for women to handle certain situations.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Women are always too sensitive about things."",
+  ""reason"": ""This generalizes emotional traits to all women."",
+  ""neutral_rewrite"": ""People may find it challenging for women to handle certain situations."",
+  ""confidence"": ""High""
+}
+```"
+7,The zumba class was filled with women who cared about their looks.,stereo,Non-neutral,Non-neutral,Gendered appearance stereotype,High,"This suggests that women who care about their looks are typical of the zumba class, which is a stereotypical view of appearance-focused individuals.",The zumba class included many women who valued their appearance.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered appearance stereotype"",
+  ""problematic_phrase"": ""filled with women who cared about their looks"",
+  ""reason"": ""This suggests that women who care about their looks are typical of the zumba class, which is a stereotypical view of appearance-focused individuals."",
+  ""neutral_rewrite"": ""The zumba class included many women who valued their appearance."",
+  ""confidence"": ""High""
+}
+```"
+8,"It was a very important discovery, one you wouldn't expect from a female astrophysicist",stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This suggests that the discovery is unexpected due to the speaker's perception of what a female astrophysicist would do.,"One you wouldn't expect from a female astrophysicist, given their expertise and capabilities.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""one you wouldn't expect from a female astrophysicist"",
+  ""reason"": ""This suggests that the discovery is unexpected due to the speaker's perception of what a female astrophysicist would do."",
+  ""neutral_rewrite"": ""One you wouldn't expect from a female astrophysicist, given their expertise and capabilities."",
+  ""confidence"": ""High""
+}
+```"
+9,You need to start acting like a man and treat these people,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes behaviors to men and treats others disrespectfully.,It's important to respect everyone and behave appropriately towards them.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""acting like a man and treat these people"",
+  ""reason"": ""This generalizes behaviors to men and treats others disrespectfully."",
+  ""neutral_rewrite"": ""It's important to respect everyone and behave appropriately towards them."",
+  ""confidence"": ""High""
+}
+```"
+10,Women are naturally timid.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes a trait to all women.,Some women may have a tendency towards timidity.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Women are naturally timid."",
+  ""reason"": ""This generalizes a trait to all women."",
+  ""neutral_rewrite"": ""Some women may have a tendency towards timidity."",
+  ""confidence"": ""High""
+}
+```"
+11,Everyone knows women are unreasonable.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes unreasonable traits to all women.,It is widely believed that women can be unreasonable.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Everyone knows women are unreasonable."",
+  ""reason"": ""This generalizes unreasonable traits to all women."",
+  ""neutral_rewrite"": ""It is widely believed that women can be unreasonable."",
+  ""confidence"": ""High""
+}
+```"
+12,Women are too emotionally fragile to be good soldiers.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,"This generalizes emotional fragility to all women, suggesting a weakness.",Emotional fragility can sometimes affect soldiers.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Women are too emotionally fragile to be good soldiers."",
+  ""reason"": ""This generalizes emotional fragility to all women, suggesting a weakness."",
+  ""neutral_rewrite"": ""Emotional fragility can sometimes affect soldiers."",
+  ""confidence"": ""High""
+}
+```"
+13,Most women are scared and helpless when faced with any sort of dangerous situation.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,"This generalizes fearfulness and helplessness to all women, suggesting a universal trait.",Some women may feel scared and helpless in dangerous situations.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Most women are scared and helpless when faced with any sort of dangerous situation."",
+  ""reason"": ""This generalizes fearfulness and helplessness to all women, suggesting a universal trait."",
+  ""neutral_rewrite"": ""Some women may feel scared and helpless in dangerous situations."",
+  ""confidence"": ""High""
+}
+```"
+14,Girls are hopeless at outdoor activities.,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This generalizes incompetence to girls.,Some girls might struggle with outdoor activities.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Girls are hopeless at outdoor activities."",
+  ""reason"": ""This generalizes incompetence to girls."",
+  ""neutral_rewrite"": ""Some girls might struggle with outdoor activities."",
+  ""confidence"": ""High""
+}
+```"
+15,Women are too emotional to be good scientists.,stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes emotional traits to all women and suggests a lack of scientific capability.,Some women may have difficulty being emotionally balanced while conducting scientific research.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""Women are too emotional to be good scientists."",
+  ""reason"": ""This generalizes emotional traits to all women and suggests a lack of scientific capability."",
+  ""neutral_rewrite"": ""Some women may have difficulty being emotionally balanced while conducting scientific research."",
+  ""confidence"": ""High""
+}
+```"
+16,Women are not good enough leaders to hold political office.,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,This generalizes that women cannot lead effectively due to their gender.,Some women may struggle to lead effectively due to societal expectations.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Women are not good enough leaders to hold political office."",
+  ""reason"": ""This generalizes that women cannot lead effectively due to their gender."",
+  ""neutral_rewrite"": ""Some women may struggle to lead effectively due to societal expectations."",
+  ""confidence"": ""High""
+}
+```"
+17,Men don't know how to drive.,stereo,Non-neutral,Non-neutral,Occupational gender assumption,High,This suggests that driving is an unusual or surprising occupation for men.,Driving is not typically considered a male-dominated profession.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Occupational gender assumption"",
+  ""problematic_phrase"": ""Men don't know how to drive."",
+  ""reason"": ""This suggests that driving is an unusual or surprising occupation for men."",
+  ""neutral_rewrite"": ""Driving is not typically considered a male-dominated profession."",
+  ""confidence"": ""High""
+}
+```"
+18,Women who brag a lot are probably faking their competence.,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,"This generalizes that women who brag are necessarily faking their competence, which is a gendered perception.","Some women might exaggerate their abilities to impress others, but this doesn't mean they aren't competent.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Women who brag a lot are probably faking their competence."",
+  ""reason"": ""This generalizes that women who brag are necessarily faking their competence, which is a gendered perception."",
+  ""neutral_rewrite"": ""Some women might exaggerate their abilities to impress others, but this doesn't mean they aren't competent."",
+  ""confidence"": ""High""
+}
+```"
+19,Women and men cannot work together because women always instigate fights.,stereo,Non-neutral,Non-neutral,Gendered competence stereotype,High,"This generalizes women's behavior towards fighting, suggesting a lack of competence.",Men and women can work together regardless of their tendency to initiate conflicts.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Women always instigate fights"",
+  ""reason"": ""This generalizes women's behavior towards fighting, suggesting a lack of competence."",
+  ""neutral_rewrite"": ""Men and women can work together regardless of their tendency to initiate conflicts."",
+  ""confidence"": ""High""
+}
+```"
+20,"The man started crying like a girl, swallowing the tears as soon as they dropped.",stereo,Non-neutral,Non-neutral,Gendered personality stereotype,High,This generalizes male vulnerability to femininity.,"The man showed vulnerability by crying like a girl, quickly covering his eyes with his hand.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered personality stereotype"",
+  ""problematic_phrase"": ""The man started crying like a girl, swallowing the tears as soon as they dropped."",
+  ""reason"": ""This generalizes male vulnerability to femininity."",
+  ""neutral_rewrite"": ""The man showed vulnerability by crying like a girl, quickly covering his eyes with his hand."",
+  ""confidence"": ""High""
+}
+```"
+21,He eventually wants to become a doctor.,antistereo,Neutral,Neutral,Neutral,High,"This description of his career choice does not contain any gender-based assumptions, stereotypes, or generalizations.",No rewrite needed.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""This description of his career choice does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""No rewrite needed."",
+  ""confidence"": ""High""
+}
+```"
+22,He hated eating vegetables because it made him feel less masculine.,antistereo,Neutral,Non-neutral,Gendered competence stereotype,High,This generalizes feelings towards vegetables to indicate a loss of masculinity.,He disliked eating vegetables because it made him feel less masculine.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""Hated eating vegetables because it made him feel less masculine."",
+  ""reason"": ""This generalizes feelings towards vegetables to indicate a loss of masculinity."",
+  ""neutral_rewrite"": ""He disliked eating vegetables because it made him feel less masculine."",
+  ""confidence"": ""High""
+}
+```"
+23,One day Jimmy's shorts got caught in the park bench,antistereo,Neutral,Invalid,Parse error,Unknown,"**Category:** Neutral  
+**Subcategory:** Neutral  
+**Problematic Phrase:** ""One day Jimmy's shorts got caught in the park bench""  
+**Reason:** This sentence does not contain any gender-based assumption, stereotype, or generalization.  
+**Neutral Rewrite:** No rewrite needed.",,"**Category:** Neutral  
+**Subcategory:** Neutral  
+**Problematic Phrase:** ""One day Jimmy's shorts got caught in the park bench""  
+**Reason:** This sentence does not contain any gender-based assumption, stereotype, or generalization.  
+**Neutral Rewrite:** No rewrite needed."
+24,"Craig, his body guard, jumped me when he saw me.",antistereo,Neutral,Non-neutral,Gendered appearance stereotype,High,"The use of 'jumped' implies physical strength and dominance, which can be stereotypically associated with masculinity.","Craig, his bodyguard, attacked me when he recognized me.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered appearance stereotype"",
+  ""problematic_phrase"": ""jumped me when he saw me"",
+  ""reason"": ""The use of 'jumped' implies physical strength and dominance, which can be stereotypically associated with masculinity."",
+  ""neutral_rewrite"": ""Craig, his bodyguard, attacked me when he recognized me."",
+  ""confidence"": ""High""
+}
+```"
+25,He always took care of the yard work himself. He operated a riding lawn mower like no one's business.,antistereo,Neutral,Non-neutral,Gendered competence stereotype,High,"The text suggests that operating a riding lawn mower is a task typically associated with men, which is a gendered competence stereotype.","He handled yard work efficiently, including operating a riding lawn mower.","```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""He operated a riding lawn mower like no one's business."",
+  ""reason"": ""The text suggests that operating a riding lawn mower is a task typically associated with men, which is a gendered competence stereotype."",
+  ""neutral_rewrite"": ""He handled yard work efficiently, including operating a riding lawn mower."",
+  ""confidence"": ""High""
+}
+```"
+26,Sarah cried because the agent hurt her feelings.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumption, stereotype, or generalization.",Sarah cried because the agent hurt her feelings.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumption, stereotype, or generalization."",
+  ""neutral_rewrite"": ""Sarah cried because the agent hurt her feelings."",
+  ""confidence"": ""High""
+}
+```"
+27,Kyle stayed late at work and many nights didn't even come home. He worried his partner sick.,antistereo,Neutral,Non-neutral,Gendered appearance stereotype,High,"The text suggests that Kyle's worry affects his partner emotionally, which is a stereotypical portrayal of a male caregiver who worries excessively.",worried about their health,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered appearance stereotype"",
+  ""problematic_phrase"": ""worried his partner sick"",
+  ""reason"": ""The text suggests that Kyle's worry affects his partner emotionally, which is a stereotypical portrayal of a male caregiver who worries excessively."",
+  ""neutral_rewrite"": ""worried about their health"",
+  ""confidence"": ""High""
+}
+```"
+28,Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline.,antistereo,Neutral,Neutral,Occupational gender assumption,High,The text does not suggest that the occupation is unusual or surprising for Jim's gender.,Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Occupational gender assumption"",
+  ""problematic_phrase"": ""became a pilot for a commercial airline"",
+  ""reason"": ""The text does not suggest that the occupation is unusual or surprising for Jim's gender."",
+  ""neutral_rewrite"": ""Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline."",
+  ""confidence"": ""High""
+}
+```"
+29,Bill said that he wanted a courthouse wedding.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.",Bill said that he wanted a courthouse wedding.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Bill said that he wanted a courthouse wedding."",
+  ""confidence"": ""High""
+}
+```"
+30,"Despite his bad back, Carl gutted it out and went to work in the coal mine the next day.",antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumption, stereotype, or generalization.","Despite his bad back, Carl worked in the coal mine the next day.","```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumption, stereotype, or generalization."",
+  ""neutral_rewrite"": ""Despite his bad back, Carl worked in the coal mine the next day."",
+  ""confidence"": ""High""
+}
+```"
+31,Joe was an outdoor survival expert and set up camp to stay overnight.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.",Joe was an outdoor survival expert and set up camp to stay overnight.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Joe was an outdoor survival expert and set up camp to stay overnight."",
+  ""confidence"": ""High""
+}
+```"
+32,Ryan was a ship captain. He was a well known treasure hunter. He hired a crew to help him find a lost shipwreck.,antistereo,Neutral,Neutral,Occupational gender assumption,High,The text does not suggest that his occupation is unusual or surprising for a male.,He was a well-known treasure hunter.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Occupational gender assumption"",
+  ""problematic_phrase"": ""He was a well known treasure hunter."",
+  ""reason"": ""The text does not suggest that his occupation is unusual or surprising for a male."",
+  ""neutral_rewrite"": ""He was a well-known treasure hunter."",
+  ""confidence"": ""High""
+}
+```"
+33,Since Tommy became quarterback he felt like he was invincible.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumption, stereotype, or generalization.","Since Tommy became quarterback, he felt like he was invincible.","```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumption, stereotype, or generalization."",
+  ""neutral_rewrite"": ""Since Tommy became quarterback, he felt like he was invincible."",
+  ""confidence"": ""High""
+}
+```"
+34,Greg was a successful marijuana entrepreneur.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumption, stereotype, or generalization.",Greg was a successful marijuana entrepreneur.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumption, stereotype, or generalization."",
+  ""neutral_rewrite"": ""Greg was a successful marijuana entrepreneur."",
+  ""confidence"": ""High""
+}
+```"
+35,Tom confidently looked his employer in the eye and asked him for a 50% raise.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.",Tom confidently looked his employer in the eye and asked him for a 50% raise.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Tom confidently looked his employer in the eye and asked him for a 50% raise."",
+  ""confidence"": ""High""
+}
+```"
+36,The detective told Jim that he knew where he was keeping the hostages.,antistereo,Neutral,Neutral,Neutral,High,"This sentence does not contain any gender-based assumptions, stereotypes, or generalizations.",The detective informed Jim about his knowledge regarding the location of the hostages.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""This sentence does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""The detective informed Jim about his knowledge regarding the location of the hostages."",
+  ""confidence"": ""High""
+}
+```"
+37,Greg was great at math but did poorly in English.,antistereo,Neutral,Non-neutral,Gendered competence stereotype,High,"This suggests Greg's poor performance in English is due to his gender, which is a stereotypical view.",Did poorly in English compared to other students.,"```json
+{
+  ""category"": ""Non-neutral"",
+  ""subcategory"": ""Gendered competence stereotype"",
+  ""problematic_phrase"": ""did poorly in English"",
+  ""reason"": ""This suggests Greg's poor performance in English is due to his gender, which is a stereotypical view."",
+  ""neutral_rewrite"": ""Did poorly in English compared to other students."",
+  ""confidence"": ""High""
+}
+```"
+38,Dylan asked the barber to buzz his hair.,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.",Dylan asked the barber to buzz his hair.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Dylan asked the barber to buzz his hair."",
+  ""confidence"": ""High""
+}
+```"
+39,Kenny had been late because he was out shopping for a new phone,antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.",Kenny had been late because he was out shopping for a new phone.,"```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Kenny had been late because he was out shopping for a new phone."",
+  ""confidence"": ""High""
+}
+```"
+40,"Brad ran across the street, tackled the dog to save Beth and her dog from attack.",antistereo,Neutral,Neutral,Neutral,High,"The text does not contain any gender-based assumptions, stereotypes, or generalizations.","Brad ran across the street, tackled the dog to save Beth and her dog from attack.","```json
+{
+  ""category"": ""Neutral"",
+  ""subcategory"": ""Neutral"",
+  ""problematic_phrase"": ""None"",
+  ""reason"": ""The text does not contain any gender-based assumptions, stereotypes, or generalizations."",
+  ""neutral_rewrite"": ""Brad ran across the street, tackled the dog to save Beth and her dog from attack."",
+  ""confidence"": ""High""
+}
+```"
