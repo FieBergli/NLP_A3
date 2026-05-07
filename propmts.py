@@ -1006,19 +1006,4 @@ Output:
   "confidence": "Medium"
 }
 
----
-
-### Borderline
-
-Input: The daughter cried and screamed as she was scared.
-Output:
-{
-  "category": "Borderline",
-  "subcategory": "Borderline / context-dependent",
-  "problematic_phrase": "cried and screamed",
-  "reason": "This may be neutral but could reinforce stereotypes depending on context.",
-  "neutral_rewrite": "The daughter reacted in fear.",
-  "confidence": "Medium"
-}
-
 """
