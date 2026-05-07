@@ -2,7 +2,7 @@ import os
 import time
 from datetime import datetime
 import pandas as pd
-from model_utils import analyze_text, get_prompt_a, get_prompt_b, get_prompt_c, load_model
+from model_utils import analyze_text, get_prompt_a, get_prompt_b, get_prompt_c, get_prompt_d, load_model
 
 
 os.makedirs("results", exist_ok=True)
@@ -31,6 +31,7 @@ prompts = {
     "A": get_prompt_a(),
     "B": get_prompt_b(),
     "C": get_prompt_c(),
+    "D": get_prompt_d()
 }
 
 with open(RESULTS_PATH, "w", encoding="utf-8") as results_file:

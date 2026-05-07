@@ -6,7 +6,7 @@ st.set_page_config(page_title="Bias & Safety Analyzer", page_icon="⚖️")
 st.title("⚖️ Bias & Safety Analyzer")
 
 st.write(
-    "Enter a piece of text. The app classifies it as Neutral, Non-neutral, or Borderline, "
+    "Enter a piece of text. The app classifies it as Neutral or Non-neutral "
     "adds an explanatory subcategory, and suggests a neutral rewrite if needed."
 )
 

@@ -1,4 +1,4 @@
-from propmts import PROMPT_A, PROMPT_B, PROMPT_C
+from propmts import PROMPT_A, PROMPT_B, PROMPT_C, PROMPT_D
 import torch
 import json
 import re
@@ -44,6 +44,9 @@ def get_prompt_b():
 
 def get_prompt_c():
     return PROMPT_C
+
+def get_prompt_d():
+    return PROMPT_D
 
 
 def extract_json(response):
