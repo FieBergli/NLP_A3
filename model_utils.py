@@ -15,6 +15,7 @@ def load_model():
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
         device_map="auto"
     )
+    model.eval()
 
     return tokenizer, model
 
@@ -52,7 +53,7 @@ def extract_json(response):
     }
 
 
-def analyze_text(text, tokenizer, model, system_prompt):
+def analyze_text(text, tokenizer, model, system_prompt=PROMPT_A, max_new_tokens=160):
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -70,7 +71,7 @@ def analyze_text(text, tokenizer, model, system_prompt):
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=300,
+            max_new_tokens=max_new_tokens,
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id
         )
