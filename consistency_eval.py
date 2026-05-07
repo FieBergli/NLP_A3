@@ -25,7 +25,7 @@ print(f"Writing results to {RESULTS_PATH}", flush=True)
 gender_anti = pd.read_csv("data/gender dataset - antistereo.csv")
 gender_stereo = pd.read_csv("data/gender dataset - stereo.csv")
 combined = pd.concat([gender_anti, gender_stereo], ignore_index=True)
-TEST_SET = combined["Text"].dropna().tolist()[:5]
+TEST_SET = combined["Text"].dropna().tolist()
 
 prompts = {
     "A": get_prompt_a(),
@@ -41,6 +41,8 @@ with open(RESULTS_PATH, "w", encoding="utf-8") as results_file:
 
     for i, sentence in enumerate(TEST_SET, start=1):
         sentence_start = time.time()
+        print(f"[{i}/{len(TEST_SET)}] Running...", flush=True)
+
         write_line(results_file, f"[{i}/{len(TEST_SET)}] {sentence}")
 
         for prompt_name, prompt in prompts.items():
