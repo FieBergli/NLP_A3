@@ -1,10 +1,17 @@
 import os
 import pandas as pd
 from sklearn.metrics import classification_report, confusion_matrix
-from model_utils import load_model, analyze_text
+
+from model_utils import (
+    load_model,
+    analyze_text,
+    get_prompt_a,
+    get_prompt_b,
+    get_prompt_c,
+    get_prompt_d
+)
 
 DATA_PATH = "data/gold_main_category_dataset.csv"
-RESULTS_PATH = "results/evaluation_results.csv"
 
 os.makedirs("results", exist_ok=True)
 
@@ -17,36 +24,34 @@ def normalize_category(category):
 
     if "non-neutral" in category or "non neutral" in category:
         return "Non-neutral"
-    if "borderline" in category or "context" in category:
-        return "Borderline"
+
     if category == "neutral":
         return "Neutral"
 
     return "Invalid"
 
 
-def strict_score(gold, pred):
-    return int(gold == pred)
+def evaluate_prompt(prompt_name, prompt, df, tokenizer, model):
 
-
-def lenient_score(gold, pred):
-    if gold == pred:
-        return 1.0
-    if pred == "Borderline":
-        return 0.5
-    return 0.0
-
-
-def main():
-    tokenizer, model = load_model()
-    df = pd.read_csv(DATA_PATH)
+    print(f"\n===== Running Prompt {prompt_name} =====\n")
 
     rows = []
 
-    for _, row in df.iterrows():
-        result = analyze_text(row["text"], tokenizer, model)
+    for i, (_, row) in enumerate(df.iterrows(), start=1):
 
-        pred_category = normalize_category(result.get("category", ""))
+        print(f"[{i}/{len(df)}] Running...", flush=True)
+
+        result = analyze_text(
+            row["text"],
+            tokenizer,
+            model,
+            system_prompt=prompt
+        )
+
+        pred_category = normalize_category(
+            result.get("category", "")
+        )
+
         gold_category = row["gold_category"]
 
         rows.append({
@@ -56,8 +61,6 @@ def main():
             "gold_category": gold_category,
             "pred_category": pred_category,
             "pred_subcategory": result.get("subcategory", ""),
-            "strict_correct": strict_score(gold_category, pred_category),
-            "lenient_score": lenient_score(gold_category, pred_category),
             "confidence": result.get("confidence", ""),
             "reason": result.get("reason", ""),
             "neutral_rewrite": result.get("neutral_rewrite", ""),
@@ -65,10 +68,17 @@ def main():
         })
 
     results = pd.DataFrame(rows)
-    results.to_csv(RESULTS_PATH, index=False)
 
-    print("Strict accuracy:", results["strict_correct"].mean())
-    print("Lenient accuracy:", results["lenient_score"].mean())
+    results_path = f"results/evaluation_results_{prompt_name}.csv"
+
+    results.to_csv(results_path, index=False)
+
+    accuracy = (
+        results["gold_category"]
+        == results["pred_category"]
+    ).mean()
+
+    print("\nAccuracy:", accuracy)
 
     print("\nPrediction counts:")
     print(results["pred_category"].value_counts())
@@ -84,10 +94,40 @@ def main():
     print(confusion_matrix(
         results["gold_category"],
         results["pred_category"],
-        labels=["Neutral", "Non-neutral", "Borderline"]
+        labels=["Neutral", "Non-neutral"]
     ))
 
-    print(f"\nSaved results to {RESULTS_PATH}")
+    print(f"\nSaved results to {results_path}")
+
+
+def main():
+
+    print("Loading model...", flush=True)
+
+    tokenizer, model = load_model()
+
+    print("Model loaded.", flush=True)
+
+    df = pd.read_csv(DATA_PATH)
+
+    print(f"Loaded dataset with {len(df)} rows.", flush=True)
+
+    prompts = {
+        "A": get_prompt_a(),
+        "B": get_prompt_b(),
+        "C": get_prompt_c(),
+        "D": get_prompt_d()
+    }
+
+    for prompt_name, prompt in prompts.items():
+
+        evaluate_prompt(
+            prompt_name,
+            prompt,
+            df,
+            tokenizer,
+            model
+        )
 
 
 if __name__ == "__main__":

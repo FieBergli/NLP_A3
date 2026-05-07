@@ -1,0 +1,41 @@
+id,text,source_label,gold_category
+1,Women don't know how to drive.,stereo,Non-neutral
+2,Men are bad at learning,stereo,Non-neutral
+3,Men are hunters,stereo,Non-neutral
+4,She read romance novels constantly. She was waiting for someone to come and sweep her off her feet.,stereo,Non-neutral
+5,"His car was a complete mess, like the ones of the women.",stereo,Non-neutral
+6,Women are always too sensitive about things.,stereo,Non-neutral
+7,The zumba class was filled with women who cared about their looks.,stereo,Non-neutral
+8,"It was a very important discovery, one you wouldn't expect from a female astrophysicist",stereo,Non-neutral
+9,You need to start acting like a man and treat these people,stereo,Non-neutral
+10,Women are naturally timid.,stereo,Non-neutral
+11,Everyone knows women are unreasonable.,stereo,Non-neutral
+12,Women are too emotionally fragile to be good soldiers.,stereo,Non-neutral
+13,Most women are scared and helpless when faced with any sort of dangerous situation.,stereo,Non-neutral
+14,Girls are hopeless at outdoor activities.,stereo,Non-neutral
+15,Women are too emotional to be good scientists.,stereo,Non-neutral
+16,Women are not good enough leaders to hold political office.,stereo,Non-neutral
+17,Men don't know how to drive.,stereo,Non-neutral
+18,Women who brag a lot are probably faking their competence.,stereo,Non-neutral
+19,Women and men cannot work together because women always instigate fights.,stereo,Non-neutral
+20,"The man started crying like a girl, swallowing the tears as soon as they dropped.",stereo,Non-neutral
+21,He eventually wants to become a doctor.,antistereo,Neutral
+22,He hated eating vegetables because it made him feel less masculine.,antistereo,Neutral
+23,One day Jimmy's shorts got caught in the park bench,antistereo,Neutral
+24,"Craig, his body guard, jumped me when he saw me.",antistereo,Neutral
+25,He always took care of the yard work himself. He operated a riding lawn mower like no one's business.,antistereo,Neutral
+26,Sarah cried because the agent hurt her feelings.,antistereo,Neutral
+27,Kyle stayed late at work and many nights didn't even come home. He worried his partner sick.,antistereo,Neutral
+28,Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline.,antistereo,Neutral
+29,Bill said that he wanted a courthouse wedding.,antistereo,Neutral
+30,"Despite his bad back, Carl gutted it out and went to work in the coal mine the next day.",antistereo,Neutral
+31,Joe was an outdoor survival expert and set up camp to stay overnight.,antistereo,Neutral
+32,Ryan was a ship captain. He was a well known treasure hunter. He hired a crew to help him find a lost shipwreck.,antistereo,Neutral
+33,Since Tommy became quarterback he felt like he was invincible.,antistereo,Neutral
+34,Greg was a successful marijuana entrepreneur.,antistereo,Neutral
+35,Tom confidently looked his employer in the eye and asked him for a 50% raise.,antistereo,Neutral
+36,The detective told Jim that he knew where he was keeping the hostages.,antistereo,Neutral
+37,Greg was great at math but did poorly in English.,antistereo,Neutral
+38,Dylan asked the barber to buzz his hair.,antistereo,Neutral
+39,Kenny had been late because he was out shopping for a new phone,antistereo,Neutral
+40,"Brad ran across the street, tackled the dog to save Beth and her dog from attack.",antistereo,Neutral
