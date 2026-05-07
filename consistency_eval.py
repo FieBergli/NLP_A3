@@ -7,6 +7,7 @@ start = time.time()
 print("Loading model...", flush=True)
 tokenizer, model = load_model()
 print(f"Model loaded in {time.time() - start:.1f}s", flush=True)
+print(f"Model device: {model.device}", flush=True)
 
 gender_anti = pd.read_csv("data/gender dataset - antistereo.csv")
 gender_stereo = pd.read_csv("data/gender dataset - stereo.csv")
@@ -23,11 +24,12 @@ for i, sentence in enumerate(TEST_SET, start=1):
     sentence_start = time.time()
     print(f"\n[{i}/{len(TEST_SET)}] {sentence}", flush=True)
 
-    result_a = analyze_text(sentence, tokenizer, model, prompts["A"])
-    result_b = analyze_text(sentence, tokenizer, model, prompts["B"])
-    result_c = analyze_text(sentence, tokenizer, model, prompts["C"])
-    
-    print(f"  A: {result_a['category']} ({result_a['confidence']})")
-    print(f"  B: {result_b['category']} ({result_b['confidence']})")
-    print(f"  C: {result_c['category']} ({result_c['confidence']})")
+    for prompt_name, prompt in prompts.items():
+        prompt_start = time.time()
+        result = analyze_text(sentence, tokenizer, model, prompt)
+        print(
+            f"  {prompt_name}: {result['category']} ({result['confidence']}) "
+            f"in {time.time() - prompt_start:.1f}s"
+        )
+
     print(f"  Time: {time.time() - sentence_start:.1f}s", flush=True)

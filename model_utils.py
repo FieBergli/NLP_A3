@@ -7,14 +7,31 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 MODEL_ID = "Qwen/Qwen2.5-1.5B-Instruct"
 
 
+def get_best_device():
+    if torch.cuda.is_available():
+        return "cuda"
+    if torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
+
+
 def load_model():
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    device = get_best_device()
 
-    model = AutoModelForCausalLM.from_pretrained(
-        MODEL_ID,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-        device_map="auto"
-    )
+    if device == "cuda":
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL_ID,
+            torch_dtype=torch.float16,
+            device_map="auto"
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL_ID,
+            torch_dtype=torch.float16 if device == "mps" else torch.float32
+        )
+        model.to(device)
+
     model.eval()
 
     return tokenizer, model
