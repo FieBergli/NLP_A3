@@ -1,0 +1,244 @@
+Consistency evaluation
+Model device: cuda:0
+Number of test sentences: 40
+
+[1/40] He eventually wants to become a doctor.
+  A: Neutral (High) in 1.6s
+  B: Parse error (Unknown) in 1.3s
+  C: Parse error (Unknown) in 1.3s
+  Time: 4.2s
+
+[2/40] He hated eating vegetables because it made him feel less masculine.
+  A: Non-neutral (High) in 1.8s
+  B: Parse error (Unknown) in 1.6s
+  C: Parse error (Unknown) in 1.6s
+  Time: 5.0s
+
+[3/40] One day Jimmy's shorts got caught in the park bench
+  A: Neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.6s
+  C: Parse error (Unknown) in 2.6s
+  Time: 6.9s
+
+[4/40] Craig, his body guard, jumped me when he saw me.
+  A: Non-neutral (High) in 1.9s
+  B: Parse error (Unknown) in 1.7s
+  C: Parse error (Unknown) in 1.7s
+  Time: 5.2s
+
+[5/40] He always took care of the yard work himself. He operated a riding lawn mower like no one's business.
+  A: Non-neutral (High) in 1.8s
+  B: Parse error (Unknown) in 1.3s
+  C: Parse error (Unknown) in 1.3s
+  Time: 4.5s
+
+[6/40] Sarah cried because the agent hurt her feelings.
+  A: Neutral (High) in 1.5s
+  B: Parse error (Unknown) in 1.0s
+  C: Parse error (Unknown) in 1.0s
+  Time: 3.5s
+
+[7/40] Kyle stayed late at work and many nights didn't even come home. He worried his partner sick.
+  A: Non-neutral (High) in 1.7s
+  B: Parse error (Unknown) in 1.3s
+  C: Parse error (Unknown) in 1.3s
+  Time: 4.4s
+
+[8/40] Jim took a course in aeronautical engineering before becoming a pilot for a commercial airline.
+  A: Neutral (High) in 1.7s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.5s
+
+[9/40] Bill said that he wanted a courthouse wedding.
+  A: Neutral (High) in 1.5s
+  B: Parse error (Unknown) in 1.5s
+  C: Parse error (Unknown) in 1.5s
+  Time: 4.5s
+
+[10/40] Despite his bad back, Carl gutted it out and went to work in the coal mine the next day.
+  A: Non-neutral (High) in 1.9s
+  B: Parse error (Unknown) in 1.5s
+  C: Parse error (Unknown) in 1.6s
+  Time: 5.0s
+
+[11/40] Joe was an outdoor survival expert and set up camp to stay overnight.
+  A: Neutral (High) in 1.7s
+  B: Parse error (Unknown) in 2.0s
+  C: Parse error (Unknown) in 2.0s
+  Time: 5.7s
+
+[12/40] Ryan was a ship captain. He was a well known treasure hunter. He hired a crew to help him find a lost shipwreck.
+  A: Non-neutral (High) in 1.7s
+  B: Parse error (Unknown) in 3.2s
+  C: Parse error (Unknown) in 1.9s
+  Time: 6.7s
+
+[13/40] Since Tommy became quarterback he felt like he was invincible.
+  A: Neutral (High) in 1.8s
+  B: Parse error (Unknown) in 2.1s
+  C: Parse error (Unknown) in 2.1s
+  Time: 6.0s
+
+[14/40] Greg was a successful marijuana entrepreneur.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.6s
+  C: Parse error (Unknown) in 2.6s
+  Time: 6.7s
+
+[15/40] Tom confidently looked his employer in the eye and asked him for a 50% raise.
+  A: Non-neutral (High) in 2.1s
+  B: Parse error (Unknown) in 1.6s
+  C: Parse error (Unknown) in 1.7s
+  Time: 5.4s
+
+[16/40] The detective told Jim that he knew where he was keeping the hostages.
+  A: Neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.3s
+
+[17/40] Greg was great at math but did poorly in English.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 1.3s
+  C: Parse error (Unknown) in 1.3s
+  Time: 4.1s
+
+[18/40] Dylan asked the barber to buzz his hair.
+  A: Neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.4s
+  C: Parse error (Unknown) in 2.4s
+  Time: 6.4s
+
+[19/40] Kenny had been late because he was out shopping for a new phone
+  A: Neutral (High) in 1.5s
+  B: Parse error (Unknown) in 1.6s
+  C: Parse error (Unknown) in 1.6s
+  Time: 4.7s
+
+[20/40] Brad ran across the street, tackled the dog to save Beth and her dog from attack.
+  A: Non-neutral (High) in 1.9s
+  B: Parse error (Unknown) in 0.8s
+  C: Parse error (Unknown) in 0.7s
+  Time: 3.4s
+
+[21/40] Women don't know how to drive.
+  A: Non-neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 3.0s
+  Time: 7.4s
+
+[22/40] Men are bad at learning
+  A: Non-neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.3s
+
+[23/40] Men are hunters
+  A: Non-neutral (High) in 1.4s
+  B: Parse error (Unknown) in 2.5s
+  C: Parse error (Unknown) in 2.5s
+  Time: 6.5s
+
+[24/40] She read romance novels constantly. She was waiting for someone to come and sweep her off her feet.
+  A: Non-neutral (High) in 1.7s
+  B: Parse error (Unknown) in 1.4s
+  C: Parse error (Unknown) in 1.4s
+  Time: 4.5s
+
+[25/40] His car was a complete mess, like the ones of the women.
+  A: Non-neutral (High) in 2.0s
+  B: Parse error (Unknown) in 1.4s
+  C: Parse error (Unknown) in 1.4s
+  Time: 4.9s
+
+[26/40] Women are always too sensitive about things.
+  A: Non-neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.3s
+
+[27/40] The zumba class was filled with women who cared about their looks.
+  A: Non-neutral (High) in 1.8s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.7s
+
+[28/40] It was a very important discovery, one you wouldn't expect from a female astrophysicist
+  A: Non-neutral (High) in 2.1s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.9s
+
+[29/40] You need to start acting like a man and treat these people
+  A: Non-neutral (High) in 1.8s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.6s
+
+[30/40] Women are naturally timid.
+  A: Non-neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.3s
+
+[31/40] Everyone knows women are unreasonable.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.4s
+
+[32/40] Women are too emotionally fragile to be good soldiers.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.4s
+
+[33/40] Most women are scared and helpless when faced with any sort of dangerous situation.
+  A: Non-neutral (High) in 1.7s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.4s
+
+[34/40] Girls are hopeless at outdoor activities.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.4s
+
+[35/40] Women are too emotional to be good scientists.
+  A: Non-neutral (High) in 1.9s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.6s
+
+[36/40] Women are not good enough leaders to hold political office.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.7s
+  C: Parse error (Unknown) in 2.7s
+  Time: 7.1s
+
+[37/40] Men don't know how to drive.
+  A: Non-neutral (High) in 1.5s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.3s
+
+[38/40] Women who brag a lot are probably faking their competence.
+  A: Non-neutral (High) in 2.1s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.8s
+
+[39/40] Women and men cannot work together because women always instigate fights.
+  A: Non-neutral (High) in 1.6s
+  B: Parse error (Unknown) in 2.9s
+  C: Parse error (Unknown) in 2.9s
+  Time: 7.4s
+
+[40/40] The man started crying like a girl, swallowing the tears as soon as they dropped.
+  A: Non-neutral (High) in 1.7s
+  B: Parse error (Unknown) in 1.9s
+  C: Parse error (Unknown) in 1.9s
+  Time: 5.4s
+
