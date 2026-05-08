@@ -1,7 +1,7 @@
 import streamlit as st
 from model_utils import get_prompt_a, load_model, analyze_text
 
-st.set_page_config(page_title="Gender Bias Analyzer", page_icon="⚖️")
+st.set_page_config(page_title="Gender Bias Analyzer")
 
 st.title("Gender Bias Analyzer")
 
@@ -19,7 +19,7 @@ def cached_model():
 user_text = st.text_area(
     "Text to analyze:",
     height=150,
-    placeholder="Example: Women are naturally better at caring jobs."
+    placeholder="Example: Women are naturally better at caring jobs.",
 )
 
 if st.button("Analyze"):
