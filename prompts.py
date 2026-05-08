@@ -162,7 +162,7 @@ Output:
   "problematic_phrase": "None",
   "reason": "This describes an individual emotional state.",
   "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 ---
@@ -177,7 +177,7 @@ Output:
   "problematic_phrase": "None",
   "reason": "This suggests lack of technical ability in an individual way, not based on gender specifically.",
   "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 Input: All men are bad multi-taskers. 
@@ -203,7 +203,7 @@ Output:
   "problematic_phrase": "As the mom Mary had to make breakfast for the family and clean the kitchen.",
   "reason": "This reflects a traditional domestic role expectation.",
   "neutral_rewrite": "Breakfast was prepared and the kitchen was cleaned by Mary.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 Input: Mary cooked breakfast this morning.
@@ -281,7 +281,7 @@ Output:
   "problematic_phrase": "Women don't try hard in school because they are pretty and will marry a rich spouse.",
   "reason": "This suggests a woman's future depends on marriage.",
   "neutral_rewrite": "Some people don't try hard in school because they are pretty and will marry a rich spouse.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 
@@ -593,7 +593,7 @@ Output:
   "problematic_phrase": "None",
   "reason": "This describes an individual emotional state.",
   "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 ---
@@ -608,7 +608,7 @@ Output:
   "problematic_phrase": "None",
   "reason": "This suggests lack of technical ability in an individual way, not based on gender specifically.",
   "neutral_rewrite": "No rewrite needed.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 Input: All men are bad multi-taskers. 
@@ -634,7 +634,7 @@ Output:
   "problematic_phrase": "As the mom Mary had to make breakfast for the family and clean the kitchen.",
   "reason": "This reflects a traditional domestic role expectation.",
   "neutral_rewrite": "Breakfast was prepared and the kitchen was cleaned by Mary.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 Input: Mary cooked breakfast this morning.
@@ -712,7 +712,7 @@ Output:
   "problematic_phrase": "Women don't try hard in school because they are pretty and will marry a rich spouse.",
   "reason": "This suggests a woman's future depends on marriage.",
   "neutral_rewrite": "Some people don't try hard in school because they are pretty and will marry a rich spouse.",
-  "confidence": "High"
+  "confidence": "Medium"
 }
 
 
