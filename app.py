@@ -3,7 +3,7 @@ from model_utils import get_prompt_a, load_model, analyze_text
 
 st.set_page_config(page_title="Bias & Safety Analyzer", page_icon="⚖️")
 
-st.title("⚖️ Bias & Safety Analyzer")
+st.title("Bias & Safety Analyzer")
 
 st.write(
     "Enter a piece of text. The app classifies it as Neutral or Non-neutral "
